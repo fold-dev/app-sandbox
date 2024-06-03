@@ -1,0 +1,11 @@
+
+:root {
+    --f-font-body: 'DM Sans';
+    --f-font-heading: 'DM Sans';
+    --f-radius: 1rem;
+}
+
+html, body {
+    font-size: 14px;
+    background: var(--f-color-base-900);
+}

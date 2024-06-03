@@ -54,7 +54,7 @@ export const AppLayout = (props: any) => {
                     <Text
                         colorToken="accent"
                         fontWeight="bold">
-                        The soure code is available to all Fold Pro license holders.
+                        The soure code is available to all Fold Pro customers.
                     </Text>
                     <Text
                         size="sm"

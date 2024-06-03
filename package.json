@@ -20,7 +20,7 @@
   "dependencies": {
     "@fold-dev/core": "^0.11.5",
     "@fold-dev/design": "^0.11.5",
-    "@fold-pro/react": "^0.0.14",
+    "@fold-pro/react": "^0.0.15",
     "@heroicons/react": "^2.0.18",
     "buffer": "^6.0.3",
     "dayjs": "^1.11.8",

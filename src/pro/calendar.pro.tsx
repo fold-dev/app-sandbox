@@ -107,7 +107,7 @@ export const CalendarPro = () => {
                     subtle
                     color={Token.ColorAccent500}
                     size="sm">
-                    Agenda & Year Coming Soon! 🗓
+                    Agenda & Year Coming Soon!
                 </Pill>
                 <ButtonGroup>
                     <Button>

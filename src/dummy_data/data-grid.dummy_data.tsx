@@ -126,9 +126,7 @@ export const CountrySelect = (props: any) => {
                     className="f-ellipsis"
                     p="0 0 0 0.75rem"
                     justifyContent="flex-start">
-                    <span className="f-ellipsis">
-                        {value}
-                    </span>
+                    <span className="f-ellipsis">{value}</span>
                 </Text>
             )}
         </>

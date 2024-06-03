@@ -1,15 +1,5 @@
-import {
-    Button,
-    Header,
-    Icon,
-    LogoSolid,
-    Sidebar,
-    Stack,
-    View
-} from '@fold-dev/core'
-import {
-    PlusCircleIcon
-} from '@heroicons/react/24/outline'
+import { Button, Header, Icon, LogoSolid, Sidebar, Stack, View } from '@fold-dev/core'
+import { PlusCircleIcon } from '@heroicons/react/24/outline'
 import { useMemo } from 'react'
 import { useNavigate, useParams } from 'react-router'
 import { BlockComponent } from './block.component'
@@ -42,9 +32,9 @@ export const DockComponent = (props: any) => {
                 m="0rem 0 0 0"
                 width="100%"
                 justifyContent="center">
-                <LogoSolid 
-                    size="sm" 
-                    color="var(--f-color-accent-600)" 
+                <LogoSolid
+                    size="sm"
+                    color="var(--f-color-accent-600)"
                 />
                 <View
                     height="4rem"
@@ -83,7 +73,10 @@ export const DockComponent = (props: any) => {
                     width={30}
                     height={30}
                     variant="neutral">
-                    <Icon icon={PlusCircleIcon} size="lg" />
+                    <Icon
+                        icon={PlusCircleIcon}
+                        size="lg"
+                    />
                 </Button>
             </Stack>
         </Sidebar>

@@ -1,21 +1,12 @@
 import * as data from '@/dummy_data'
-import {
-    FIX,
-    Icon,
-    Menu,
-    MenuProvider,
-    MenuSection,
-    Pill,
-    Text,
-    View
-} from '@fold-dev/core'
+import { FIX, Icon, Menu, MenuProvider, MenuSection, Pill, Text, View } from '@fold-dev/core'
 import {
     DataGrid,
     DataGridHeader,
     DataGridTypes,
     dataGridState,
     dispatchDataGridEvent,
-    setExperimentalGlobalRowCellComponents
+    setExperimentalGlobalRowCellComponents,
 } from '@fold-pro/react'
 import { useLayoutEffect, useState } from 'react'
 import * as Token from '@fold-dev/design/tokens-es6'
@@ -92,12 +83,6 @@ export const Borderless = () => {
     }
 
     useLayoutEffect(() => {
-        
-        
-        
-        
-        
-        
         setExperimentalGlobalRowCellComponents(data._rowCellComponents)
     }, [])
 
@@ -125,7 +110,6 @@ export const Borderless = () => {
                 <DataGrid
                     border="0"
                     id="instance-1"
-                    
                     defaultCellSelection={{}}
                     defaultRowSelection={{}}
                     draggableColumns
@@ -133,9 +117,6 @@ export const Borderless = () => {
                     maxRowsSelectable={undefined}
                     singleRowSelect={false}
                     onSelect={({ rows, cols }: any) => null}
-                    
-                    
-                    
                     variant="virtual"
                     virtual={{
                         rows: 10,
@@ -212,7 +193,5 @@ export const Borderless = () => {
 }
 
 export const TablePro = () => {
-    return (
-        <Borderless />
-    )
+    return <Borderless />
 }

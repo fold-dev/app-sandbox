@@ -101,7 +101,7 @@ export const DatePickerComponent = () => {
                 break
         }
 
-        setSelection([[start,end]])
+        setSelection([[start, end]])
     }
 
     return (
@@ -199,12 +199,8 @@ export const DatePickerComponent = () => {
                 gap="1rem"
                 width="100%"
                 justifyContent="flex-end">
-                <Button>
-                    Cancel
-                </Button>
-                <Button variant="accent">
-                    Save
-                </Button>
+                <Button>Cancel</Button>
+                <Button variant="accent">Save</Button>
             </View>
         </DateRangeProvider>
     )

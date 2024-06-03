@@ -1,18 +1,14 @@
 import * as data from '@/dummy_data'
-import {
-    FIX,
-    Icon,
-    MenuProvider,
-    Text,
-    View
-} from '@fold-dev/core'
+import { FIX, Icon, MenuProvider, Text, View } from '@fold-dev/core'
 import {
     Detail,
     LabelMenu,
     Popup,
-    Todo, TodoSectionMenu, UserMenu,
+    Todo,
+    TodoSectionMenu,
+    UserMenu,
     dispatchTodoEvent,
-    todoState
+    todoState,
 } from '@fold-pro/react'
 import { useState } from 'react'
 

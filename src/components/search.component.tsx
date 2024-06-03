@@ -1,20 +1,10 @@
-import {
-    Flexer,
-    Heading,
-    Icon,
-    Input,
-    Pill,
-    Popover,
-    Text,
-    View,
-    getKey
-} from '@fold-dev/core'
+import { Flexer, Heading, Icon, Input, Pill, Popover, Text, View, getKey } from '@fold-dev/core'
 import {
     ChatBubbleBottomCenterIcon,
     ChatBubbleLeftEllipsisIcon,
     CheckCircleIcon,
     HashtagIcon,
-    UserIcon
+    UserIcon,
 } from '@heroicons/react/24/outline'
 import { useEffect, useMemo, useState } from 'react'
 
@@ -106,7 +96,13 @@ export const SearchComponent = (props: any) => {
                     ago: '1m',
                 },
                 { title: 'Create something', description: '', resource: 'Marketing', type: 'task', ago: '2h' },
-                { title: 'This is really cool...', description: '', resource: 'Marketing', type: 'task-comment', ago: '3h' },
+                {
+                    title: 'This is really cool...',
+                    description: '',
+                    resource: 'Marketing',
+                    type: 'task-comment',
+                    ago: '3h',
+                },
                 { title: 'Jon Smith', description: '', resource: 'CTO', type: 'user', ago: '30m' },
                 { title: 'Development', description: '', resource: 'Not important', type: 'channel', ago: '4h' },
             ])

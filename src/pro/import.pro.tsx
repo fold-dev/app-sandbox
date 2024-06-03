@@ -1,11 +1,6 @@
 import * as data from '@/dummy_data'
-import {
-    Link,
-    View
-} from '@fold-dev/core'
-import {
-    CsvImporter
-} from '@fold-pro/react'
+import { Link, View } from '@fold-dev/core'
+import { CsvImporter } from '@fold-pro/react'
 
 export const CsvimporterUsage = () => {
     return (
@@ -72,7 +67,5 @@ export const CsvimporterUsage = () => {
 }
 
 export const ImportPro = () => {
-    return (
-        <CsvimporterUsage />
-    )
+    return <CsvimporterUsage />
 }

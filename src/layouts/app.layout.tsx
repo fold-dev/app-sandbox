@@ -11,7 +11,7 @@ import {
     ModalClose,
     Sidebar,
     Text,
-    View
+    View,
 } from '@fold-dev/core'
 import {
     Bars3BottomLeftIcon,
@@ -40,46 +40,50 @@ export const AppLayout = (props: any) => {
                 onDismiss={() => setNotice(false)}
                 isVisible={notice}>
                 <ModalClose onClick={() => setNotice(false)} />
-                <View 
-                    column 
+                <View
+                    column
                     gap="2rem"
                     p="3rem">
-                    <Heading>
-                        Hello! 👋
-                    </Heading>
-                    <Text size="lg">
-                        We're excited to have you here!
-                    </Text>
+                    <Heading>Hello! 👋</Heading>
+                    <Text size="lg">We're excited to have you here!</Text>
                     <Text>
-                        Welcome to the Fold Pro App Sandbox. 
-                        This app sandbox is currently a work in progress, and is constantly being improved.
-                        We hope it illustrates how Fold Core & Fold Pro can be used to build products with great UX.
+                        Welcome to the Fold Pro App Sandbox. This app sandbox is currently a work in progress, and is
+                        constantly being improved. We hope it illustrates how Fold Core & Fold Pro can be used to build
+                        products with great UX.
                     </Text>
-                    <Text colorToken="accent" fontWeight="bold">
+                    <Text
+                        colorToken="accent"
+                        fontWeight="bold">
                         The soure code is available to all Fold Pro license holders.
-                    </Text> 
-                    <Text size="sm" colorToken="text-weaker">
-                        If you want a more editable environment, check out the Fold <Link size="sm" href="https://codesandbox.io/p/devbox/zen-banach-wdgzlr" target="_blank">CodeSandbox</Link>.
                     </Text>
-                    <View 
+                    <Text
+                        size="sm"
+                        colorToken="text-weaker">
+                        If you want a more editable environment, check out the Fold{' '}
+                        <Link
+                            size="sm"
+                            href="https://codesandbox.io/p/devbox/zen-banach-wdgzlr"
+                            target="_blank">
+                            CodeSandbox
+                        </Link>
+                        .
+                    </Text>
+                    <View
                         row
                         gap="1rem">
-                        <Button 
+                        <Button
                             as="a"
                             variant="accent"
                             target="_blank"
                             href="https://fold.dev/#pro">
                             Buy Pro
                         </Button>
-                        <Button 
-                            onClick={() => setNotice(false)}>
-                            Get Started →
-                        </Button>
+                        <Button onClick={() => setNotice(false)}>Get Started →</Button>
                     </View>
                 </View>
             </Modal>
 
-            <Content height={notice ? "calc(100% - 3rem)" : "100%"}>
+            <Content height={notice ? 'calc(100% - 3rem)' : '100%'}>
                 <DockComponent />
                 <NavComponent />
 

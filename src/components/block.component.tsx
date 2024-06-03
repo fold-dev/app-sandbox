@@ -28,8 +28,8 @@ export const BlockComponent = forwardRef((props: any, ref) => {
     }, [name])
     const styles = useMemo(() => {
         if (color) {
-            const foreground = color 
-            const background = addAlpha(color, 0.15) 
+            const foreground = color
+            const background = addAlpha(color, 0.15)
 
             return invert
                 ? {

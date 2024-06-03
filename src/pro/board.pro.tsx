@@ -1,10 +1,8 @@
 import * as data from '@/dummy_data'
+import { MenuProvider, View } from '@fold-dev/core'
 import {
-    MenuProvider,
-    View
-} from '@fold-dev/core'
-import {
-    Detail, Kanban,
+    Detail,
+    Kanban,
     KanbanColumnMenu,
     KanbanSelection,
     KanbanSwimlaneMenu,
@@ -12,7 +10,7 @@ import {
     LabelMenu,
     Popup,
     UserMenu,
-    kanbanState
+    kanbanState,
 } from '@fold-pro/react'
 import { useState } from 'react'
 
@@ -198,7 +196,5 @@ export const KanbanUsage = () => {
 }
 
 export const BoardPro = () => {
-    return (
-        <KanbanUsage />
-    )
+    return <KanbanUsage />
 }

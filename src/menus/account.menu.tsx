@@ -12,7 +12,7 @@ import {
     MenuSection,
     Stack,
     Text,
-    View
+    View,
 } from '@fold-dev/core'
 import { useState } from 'react'
 import { CollapsiblePanelComponent } from '../components/collapsable-panel.component'
@@ -22,23 +22,21 @@ export const AccountMenu = (props) => {
     const dndOptions = DND_OPTIONS
     const [position, setPosition] = useState('')
     const [status, setStatus] = useState('')
-    
+
     const getCurrentDndIndex = () => 1
 
-    const handleTeamMemberPositionChange = async () => {
-    }
+    const handleTeamMemberPositionChange = async () => {}
 
-    const handleUpdateUserStatus = async () => {
-    }
+    const handleUpdateUserStatus = async () => {}
 
-    const handleUpdateUserDnd = async (dnd) => {
-    }
+    const handleUpdateUserDnd = async (dnd) => {}
 
-    const handleUpdateUserPresence = async (presence) => {
-    }
+    const handleUpdateUserPresence = async (presence) => {}
 
     return (
-        <Menu width="100%" border="0">
+        <Menu
+            width="100%"
+            border="0">
             <MenuSection column>
                 <Stack
                     direction="vertical"
@@ -52,17 +50,13 @@ export const AccountMenu = (props) => {
                         name="Johannes du Plessis"
                         border="0.2rem solid var(--f-color-surface)"
                     />
-                    <Text size="lg">
-                        Johannes du Plessis
-                    </Text>
+                    <Text size="lg">Johannes du Plessis</Text>
                     <Text
                         colorToken="text-weaker"
                         size="sm">
                         CTO
                     </Text>
-                    <Text>
-                        EMEA
-                    </Text>
+                    <Text>EMEA</Text>
                 </Stack>
             </MenuSection>
 
@@ -98,17 +92,17 @@ export const AccountMenu = (props) => {
 
             <MenuSection>
                 <CollapsiblePanelComponent heading="Status">
-                    <View row gap={5} p="5px">
+                    <View
+                        row
+                        gap={5}
+                        p="5px">
                         <Input
                             placeholder="Update your status"
                             value={status}
                             onChange={(e) => setStatus(e.target.value)}
                             style={{ outline: 'none' }}
                         />
-                        <Button
-                            onClick={handleUpdateUserStatus}>
-                            Update
-                        </Button>
+                        <Button onClick={handleUpdateUserStatus}>Update</Button>
                     </View>
                 </CollapsiblePanelComponent>
             </MenuSection>
@@ -117,17 +111,17 @@ export const AccountMenu = (props) => {
 
             <MenuSection>
                 <CollapsiblePanelComponent heading="Team Role">
-                    <View row gap={5} p="5px">
+                    <View
+                        row
+                        gap={5}
+                        p="5px">
                         <Input
                             placeholder="Update your role"
                             value={position}
                             onChange={(e) => setPosition(e.target.value)}
                             style={{ outline: 'none' }}
                         />
-                        <Button
-                            onClick={handleTeamMemberPositionChange}>
-                            Update
-                        </Button>
+                        <Button onClick={handleTeamMemberPositionChange}>Update</Button>
                     </View>
                 </CollapsiblePanelComponent>
             </MenuSection>

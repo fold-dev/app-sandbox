@@ -1,8 +1,5 @@
 import { Avatar, Header, Icon, Pill, Popover, Stack, Text, View, useVisibility } from '@fold-dev/core'
-import {
-    BellIcon,
-    LifebuoyIcon
-} from '@heroicons/react/24/outline'
+import { BellIcon, LifebuoyIcon } from '@heroicons/react/24/outline'
 import { AccountMenu } from '../menus/account.menu'
 import { SearchComponent } from './search.component'
 import * as Token from '@fold-dev/design/tokens-es6'

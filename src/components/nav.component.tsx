@@ -21,7 +21,7 @@ import {
     moveElementInArray,
     removeElementFromArray,
     useDragEvent,
-    useVisibility
+    useVisibility,
 } from '@fold-dev/core'
 import * as Token from '@fold-dev/design/tokens-es6'
 import { ChevronUpDownIcon } from '@heroicons/react/24/outline'

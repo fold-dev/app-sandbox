@@ -202,7 +202,8 @@ export const CalendarPro = () => {
                                 height="fit-content"
                                 p="0 4px 0 var(--f-calendar-schedule-gutter-width)"
                                 width="100%"
-                                m="0 0 -1px 0">
+                                position="relative"
+                                zIndex={1}>
                                 <CalendarMonth
                                     noClamp
                                     date={date}
@@ -214,6 +215,9 @@ export const CalendarPro = () => {
                             <View
                                 width="100%"
                                 flex={1}
+                                position="relative"
+                                zIndex={0}
+                                m="-1px 0 0 0"
                                 style={{ overflowY: 'scroll' }}
                                 className="f-scrollbar">
                                 <CalendarSchedule
@@ -250,7 +254,8 @@ export const CalendarPro = () => {
                                 height="fit-content"
                                 p="0 4px 0 var(--f-calendar-schedule-gutter-width)"
                                 width="100%"
-                                m="0 0 -1px 0">
+                                position="relative"
+                                zIndex={1}>
                                 <CalendarMonth
                                     noClamp
                                     date={date}
@@ -262,6 +267,9 @@ export const CalendarPro = () => {
                             <View
                                 width="100%"
                                 flex={1}
+                                position="relative"
+                                zIndex={0}
+                                m="-1px 0 0 0"
                                 style={{ overflowY: 'scroll' }}
                                 className="f-scrollbar">
                                 <CalendarSchedule
@@ -275,10 +283,24 @@ export const CalendarPro = () => {
                     )}
 
                     {option == 2 && (
-                        <CalendarMonth
-                            date={date}
-                            events={events}
-                        />
+                        <View 
+                            width="100%"
+                            height="100%"
+                            column
+                            justifyContent="stretch"
+                            alignContent="stretch"
+                            alignItems="stretch">
+                            <View 
+                                flex={1} 
+                                className="f-scrollbar"
+                                style={{ overflowY: 'auto' }}>
+                                <CalendarMonth
+                                    style={{ height: '100%', minHeight: 750 }}
+                                    date={date}
+                                    events={events}
+                                />
+                            </View>
+                        </View>
                     )}
                 </CalendarProvider>
             </MenuProvider>

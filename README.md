@@ -1,7 +1,5 @@
 # Fold App Sandbox
 
-
-
 ## Installation
 
 This is a [ViteJS](https://vitejs.dev/) project.

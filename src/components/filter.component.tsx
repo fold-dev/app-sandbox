@@ -20,7 +20,7 @@ import {
     RectangleStackIcon,
 } from '@heroicons/react/24/outline'
 import { useMemo, useState } from 'react'
-import { DatePicker, DateRangeProvider } from '../../../fold/packages/pro/src'
+import { DatePicker, DateRangeProvider } from '@fold-pro/react'
 
 export const DatePickerComponent = () => {
     const date = new Date()

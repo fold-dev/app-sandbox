@@ -12,7 +12,6 @@ export default defineConfig({
   optimizeDeps: {
   },
   build: {
-    outDir: './docs',
     commonjsOptions: { transformMixedEsModules: true } // Change
   },
   resolve: {

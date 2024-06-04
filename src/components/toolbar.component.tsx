@@ -1,4 +1,4 @@
-import { Avatar, Header, Icon, Pill, Popover, Stack, Text, View, useVisibility } from '@fold-dev/core'
+import { Avatar, Button, Header, Icon, Pill, Popover, Stack, Text, View, useVisibility } from '@fold-dev/core'
 import { BellIcon, LifebuoyIcon } from '@heroicons/react/24/outline'
 import { AccountMenu } from '../menus/account.menu'
 import { SearchComponent } from './search.component'
@@ -11,7 +11,6 @@ export const ToolbarComponent = (props: any) => {
         <>
             <Header
                 row
-                //bgToken="base-900"
                 height="4rem">
                 <Stack
                     direction="horizontal"
@@ -21,12 +20,15 @@ export const ToolbarComponent = (props: any) => {
                     p="0rem 1.6rem 0rem 0rem"
                     flex={1}>
                     <SearchComponent />
-                    <Pill
-                        subtle
-                        color={Token.ColorAccent500}
-                        size="sm">
-                        Beta
-                    </Pill>
+                    <Button
+                        outline
+                        size="sm"
+                        as="a"
+                        variant="accent"
+                        target="_blank"
+                        href="https://fold.dev/#pro">
+                        Buy Pro
+                    </Button>
                     <Icon icon={BellIcon} />
                     <Icon icon={LifebuoyIcon} />
                     <Popover

@@ -646,7 +646,7 @@ export const NavComponent = (props: any) => {
                         <Text
                             colorToken="base-500"
                             size="sm">
-                            Pro Sandbox {version}
+                            App Sandbox {version} (beta)
                         </Text>
                         <Flexer />
                         <Text

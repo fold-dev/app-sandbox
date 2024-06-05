@@ -1,4 +1,4 @@
-import * as data from '@/dummy_data'
+import * as data from '@/dummy-data'
 import { FIX, Icon, MenuProvider, Text, View } from '@fold-dev/core'
 import {
     Detail,
@@ -200,11 +200,6 @@ export const TodoUsage = () => {
                     richInputHighlight={handleHighlight}
                     richInputTrigger={handleTrigger}
                     richInputOptions={options}
-                    editableSectionName={true}
-                    showSectionCount={true}
-                    hideCheckbox={false}
-                    collapsibleSection={true}
-                    collapsibleTask={true}
                     targetVariant={{ cards: 'animated', nav: 'focus' }}
                     task={undefined}
                     sectionHeader={undefined}

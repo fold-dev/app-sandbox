@@ -1,4 +1,4 @@
-import * as data from '@/dummy_data'
+import * as data from '@/dummy-data'
 import { FIX, Icon, Menu, MenuProvider, MenuSection, Pill, Text, View } from '@fold-dev/core'
 import {
     DataGrid,

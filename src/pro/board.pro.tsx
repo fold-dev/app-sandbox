@@ -1,4 +1,4 @@
-import * as data from '@/dummy_data'
+import * as data from '@/dummy-data'
 import { MenuProvider, View } from '@fold-dev/core'
 import {
     Detail,

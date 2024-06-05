@@ -1,5 +1,5 @@
 import { Avatar, IconLib } from '@fold-dev/core'
-import * as Token from '@fold-dev/design/tokens-es6'
+import * as Token from '@fold-dev/design/tokens'
 import React from 'react'
 import { KanbanTypes } from '@fold-pro/react'
 
@@ -26,6 +26,7 @@ export const swimlanes: KanbanTypes.Swimlane[] = [
                         image: '',
                         labels: [{ id: 'uuid1', text: 'Sales' }],
                         badges: [],
+                        start: new Date('10 April 2024'),
                         users: [
                             { id: 'uuid1', name: 'John', image: '/men/09.jpg' },
                             { id: 'uuid2', name: 'Ben', image: '/men/06.jpg' },
@@ -77,6 +78,7 @@ export const swimlanes: KanbanTypes.Swimlane[] = [
                             { id: 'uuid2', name: 'Ben', image: '/men/06.jpg' },
                         ],
                         badges: [],
+                        start: new Date('23 August 2024'),
                     },
                     {
                         id: 'c332',

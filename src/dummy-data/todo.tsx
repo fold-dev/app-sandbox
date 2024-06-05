@@ -1,16 +1,15 @@
 import { IconLib } from '@fold-dev/core'
-import * as Token from '@fold-dev/design/tokens-es6'
+import * as Token from '@fold-dev/design/tokens'
 import React from 'react'
+import { TodoTypes } from '@fold-pro/react'
 
-export const sections = [
+export const sections: TodoTypes.Section[] = [
     {
         id: 'section1',
         name: 'Doing',
         description: '',
         collapsible: true,
-        count: true,
         color: undefined,
-        hideHeader: true,
         tasks: [
             {
                 id: 'section1-1',
@@ -34,6 +33,7 @@ export const sections = [
                 title: 'Create social media content calendar',
                 locked: true,
                 collapsed: false,
+                start: new Date('23 July 2024'),
                 tasks: [
                     {
                         id: 'section1-3',
@@ -105,7 +105,6 @@ export const sections = [
         description: 'Create content strategy and outline website sections',
         collapsible: true,
         prefix: <IconLib icon="sun" />,
-        count: true,
         color: Token.ColorNeonpink400,
         tasks: [
             {
@@ -151,7 +150,6 @@ export const sections = [
         name: 'Backlog',
         description: 'Everything that has no home should go here.',
         collapsible: true,
-        count: true,
         color: Token.ColorTeal400,
         tasks: [
             {

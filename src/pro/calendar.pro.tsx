@@ -1,4 +1,4 @@
-import * as data from '@/dummy_data'
+import * as data from '@/dummy-data'
 import {
     Button,
     ButtonGroup,
@@ -17,7 +17,7 @@ import {
     View,
     generateUEID,
 } from '@fold-dev/core'
-import { CalendarMonth, CalendarProvider, CalendarSchedule, Detail, Popup, getShortDateFormat } from '@fold-pro/react'
+import { CalendarDays, CalendarProvider, CalendarSchedule, Detail, Popup, getShortDateFormat } from '@fold-pro/react'
 import { useState } from 'react'
 import * as Token from '@fold-dev/design/tokens-es6'
 
@@ -204,7 +204,7 @@ export const CalendarPro = () => {
                                 width="100%"
                                 position="relative"
                                 zIndex={1}>
-                                <CalendarMonth
+                                <CalendarDays
                                     noClamp
                                     date={date}
                                     events={events.filter((e) => e.allDay)}
@@ -256,7 +256,7 @@ export const CalendarPro = () => {
                                 width="100%"
                                 position="relative"
                                 zIndex={1}>
-                                <CalendarMonth
+                                <CalendarDays
                                     noClamp
                                     date={date}
                                     events={events.filter((e) => e.allDay)}
@@ -294,7 +294,7 @@ export const CalendarPro = () => {
                                 flex={1} 
                                 className="f-scrollbar"
                                 style={{ overflowY: 'auto' }}>
-                                <CalendarMonth
+                                <CalendarDays
                                     style={{ height: '100%', minHeight: 750 }}
                                     date={date}
                                     events={events}

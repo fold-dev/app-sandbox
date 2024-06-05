@@ -83,7 +83,7 @@ export const AppLayout = (props: any) => {
                 </View>
             </Modal>
 
-            <Content height={notice ? 'calc(100% - 3rem)' : '100%'}>
+            <Content height="100%">
                 <DockComponent />
                 <NavComponent />
 

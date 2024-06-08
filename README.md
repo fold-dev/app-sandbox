@@ -1,8 +1,8 @@
-# App Sandbox
+# AppSandbox
 
 ## Overview
 
-Introducing the Fold App Sandbox (beta), a boilerplate project for creating next-level product experiences with Fold. 
+Introducing the Fold AppSandbox (beta), a boilerplate project for creating next-level product experiences with Fold. 
 
 - [Requirements](#requirements)
 - [Registry](#registry)

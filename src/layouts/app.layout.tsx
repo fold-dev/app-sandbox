@@ -47,7 +47,7 @@ export const AppLayout = (props: any) => {
                     <Heading>Hello! 👋</Heading>
                     <Text size="lg">We're excited to have you here!</Text>
                     <Text>
-                        Welcome to the Fold Pro App Sandbox. This app sandbox is currently a work in progress, and is
+                        Welcome to the Fold Pro AppSandbox. This app sandbox is currently a work in progress, and is
                         constantly being improved. We hope it illustrates how Fold Core & Fold Pro can be used to build
                         products with great UX.
                     </Text>

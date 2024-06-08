@@ -51,23 +51,6 @@ export const AppLayout = (props: any) => {
                         constantly being improved. We hope it illustrates how Fold Core & Fold Pro can be used to build
                         products with great UX.
                     </Text>
-                    <Text
-                        colorToken="accent"
-                        fontWeight="bold">
-                        The soure code is available to all Fold Pro customers.
-                    </Text>
-                    <Text
-                        size="sm"
-                        colorToken="text-weaker">
-                        If you want a more editable environment, check out the Fold{' '}
-                        <Link
-                            size="sm"
-                            href="https://codesandbox.io/p/devbox/zen-banach-wdgzlr"
-                            target="_blank">
-                            CodeSandbox
-                        </Link>
-                        .
-                    </Text>
                     <View
                         row
                         gap="1rem">

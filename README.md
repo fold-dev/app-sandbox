@@ -33,7 +33,7 @@ This is a [ViteJS](https://vitejs.dev/) project.
 # Install dependencies
 npm install
 
-# run development serber
+# run development server
 npm run dev
 ```
 

@@ -1,7 +1,7 @@
 {
   "name": "fold-app-sandbox",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "engines": {
     "node": "20.x"
@@ -18,9 +18,9 @@
     "test": "jest"
   },
   "dependencies": {
-    "@fold-dev/core": "^0.11.7",
-    "@fold-dev/design": "^0.11.7",
-    "@fold-pro/react": "^0.1.0",
+    "@fold-dev/core": "^0.11.8",
+    "@fold-dev/design": "^0.11.8",
+    "@fold-pro/react": "^0.1.1",
     "@heroicons/react": "^2.0.18",
     "buffer": "^6.0.3",
     "dayjs": "^1.11.8",

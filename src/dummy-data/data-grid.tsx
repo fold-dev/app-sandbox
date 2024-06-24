@@ -1,7 +1,7 @@
 import { Badge, Button, FISun, Icon, IconLib, Select, Text, View, timezones, waitForRender } from '@fold-dev/core'
 import * as Token from '@fold-dev/design/tokens'
 import React, { FunctionComponent, useContext, useEffect, useRef, useState } from 'react'
-import { DataGridContext, DataGridTypes } from '@fold-pro/react'
+import { DataGridContext, DataGridTypes } from '../src'
 
 const countries = [
     'United States',
@@ -58,14 +58,21 @@ const countries = [
 
 export const CountrySelect = (props: any) => {
     const { id, edit, value, options, error, warning, onEdit, onCancel } = props
-    const { refocus } = useContext(DataGridContext)
+    const { refocus, selectionLock } = useContext(DataGridContext)
     const [selected, setSelected] = useState<any>([value])
     const ref = useRef<any>(null)
+
+    const handleClose = () => {
+        onCancel()
+        selectionLock(false)
+        refocus() // unnecessary
+    }
 
     const handleSelect = (option, dismiss) => {
         setSelected([option.key])
         onEdit(option.key)
-        refocus()
+        selectionLock(false)
+        refocus() // unnecessary
     }
 
     const handleFilter = (text: string) => {
@@ -74,10 +81,9 @@ export const CountrySelect = (props: any) => {
 
     useEffect(() => {
         if (edit) {
-            waitForRender(() => {
-                ref.current.focus()
-                ref.current.childNodes[0].childNodes[0].click()
-            })
+            // manually click on the select input after React renders
+            selectionLock(true)
+            waitForRender(() => ref.current.querySelector(':scope input').focus(), 10)
         }
     }, [edit])
 
@@ -87,17 +93,21 @@ export const CountrySelect = (props: any) => {
                 <View
                     ref={ref}
                     position="absolute"
-                    zIndex={2}
+                    zIndex={9}
                     style={{ inset: 0 }}
                     bgToken="surface-inverse"
                     width="100"
                     height="100%">
                     <Select
+                        openOnMount
+                        openOnFocus
+                        onClose={handleClose}
                         border="none"
                         shadow="none"
                         radius={0}
                         width="100%"
                         inputProps={{ height: 39 }}
+                        selectPopoverProps={{ style: { borderTopLeftRadius: 0, borderTopRightRadius: 0 } }}
                         style={{
                             '--f-focus': 'none',
                             '--f-input-border-radius': '0px',
@@ -286,8 +296,7 @@ export const footer = [
     },
 ]
 
-export const _rowCellComponents: (FunctionComponent | undefined)[] = [
-    undefined,
+export const columnTypes: (FunctionComponent | undefined)[] = [
     undefined,
     undefined,
     undefined,

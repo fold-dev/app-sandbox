@@ -1,7 +1,7 @@
 import { IconLib } from '@fold-dev/core'
 import * as Token from '@fold-dev/design/tokens'
 import React from 'react'
-import { TodoTypes } from '@fold-pro/react'
+import { TodoTypes } from '../src'
 
 export const sections: TodoTypes.Section[] = [
     {
@@ -16,12 +16,6 @@ export const sections: TodoTypes.Section[] = [
                 title: 'Research target audience <span class="f-rich-input-entity" contenteditable="false" tabindex="1" data-value="uuid1" data-type="user">@John</span>',
                 start: new Date('10 April 2024'),
                 labels: [{ id: 'uuid3', text: 'DevOps' }],
-                badges: [
-                    {
-                        icon: 'warning',
-                        label: 'Notice',
-                    },
-                ],
                 users: [
                     { id: 'uuid1', name: 'John', image: '/men/09.jpg' },
                     { id: 'uuid2', name: 'Ben', image: '/men/06.jpg' },
@@ -34,6 +28,8 @@ export const sections: TodoTypes.Section[] = [
                 locked: true,
                 collapsed: false,
                 start: new Date('23 July 2024'),
+                labels: [{ id: 'uuid3', text: 'DevOps' }],
+                badges: [{ icon: 'warning', label: 'Locked' }],
                 tasks: [
                     {
                         id: 'section1-3',
@@ -102,7 +98,7 @@ export const sections: TodoTypes.Section[] = [
     {
         id: 'section2',
         name: 'Done',
-        description: 'Create content strategy and outline website sections',
+        description: 'Create content strategy and outline website sections ',
         collapsible: true,
         prefix: <IconLib icon="sun" />,
         color: Token.ColorNeonpink400,

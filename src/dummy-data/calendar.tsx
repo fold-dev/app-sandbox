@@ -70,8 +70,8 @@ export const events = [
     {
         id: 'id07',
         title: 'Holiday',
-        start: new Date('2024-05-23T21:00:00'),
-        end: new Date('2024-05-25T22:00:00'),
+        start: new Date('2024-05-23T12:00:00'),
+        end: new Date('2024-05-25T12:00:00'),
         allDay: true,
     },
     {
@@ -120,8 +120,8 @@ export const events = [
     {
         id: 'we3',
         title: 'Meeting with John',
-        start: new Date('2024-05-5 14:00:00'),
-        end: new Date('2024-05-5 23:30:00'),
+        start: new Date('2024-05-06 14:00:00'),
+        end: new Date('2024-05-06 15:30:00'),
         color: Token.ColorTeal500,
     },
     {

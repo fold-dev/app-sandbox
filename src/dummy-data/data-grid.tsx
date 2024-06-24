@@ -1,7 +1,7 @@
 import { Badge, Button, FISun, Icon, IconLib, Select, Text, View, timezones, waitForRender } from '@fold-dev/core'
 import * as Token from '@fold-dev/design/tokens'
 import React, { FunctionComponent, useContext, useEffect, useRef, useState } from 'react'
-import { DataGridContext, DataGridTypes } from '../src'
+import { DataGridContext, DataGridTypes } from '@fold-pro/react'
 
 const countries = [
     'United States',

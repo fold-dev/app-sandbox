@@ -1,7 +1,7 @@
 import { Avatar, IconLib } from '@fold-dev/core'
 import * as Token from '@fold-dev/design/tokens'
 import React from 'react'
-import { KanbanTypes } from '../src'
+import { KanbanTypes } from '@fold-pro/react'
 
 export const swimlanes: KanbanTypes.Swimlane[] = [
     {
